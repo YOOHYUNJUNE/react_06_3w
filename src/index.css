@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.userImg {
+  width: 300px;
+  height: 300px;
+}
+
+.border-blue {
+  border: 3px solid blue;
+  width: 300px;
+  height: 300px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  font-size: 20px;
+  width : 400px;
+  height : 400px;
+  margin : 100px;
+  /* padding : 10px; */
+  border-radius : 5px;
+  box-shadow: 0 0 40px gray;
+  background-color: gray;
+  background-image: url('/public/image/son_01.jpg');
+  background-size: cover;
+  flex-basis: auto;
+}
+
+
+
