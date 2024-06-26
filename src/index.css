@@ -26,19 +26,19 @@ code {
 #container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .card {
   font-size: 20px;
-  width : 400px;
-  height : 400px;
-  margin : 100px;
+  width : 200px;
+  height : 200px;
+  margin : 30px;
   /* padding : 10px; */
   border-radius : 5px;
   box-shadow: 0 0 40px gray;
   background-color: gray;
-  background-image: url('/public/image/son_01.jpg');
+  background-image: url('/public/son_01.jpg');
   background-size: cover;
   flex-basis: auto;
 }

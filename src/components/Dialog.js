@@ -10,6 +10,7 @@ function Dialog(props) {
 
             {props.children}            
         </FancyBorder>        
+
     )
 }
 

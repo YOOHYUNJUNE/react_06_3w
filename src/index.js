@@ -12,6 +12,20 @@ import CommentList from './components/CommentList';
 import NumberList from './components/NumberList';
 import WelcomeDialog from './components/WelcomeDialog';
 import ProfileCard from './components/ProfileCard';
+import MainWrap from './components/blog/MainWrap';
+import BlogMain from './components/blog/BlogMain';
+import Greeting from './components/Greeting';
+import MyButton from './components/MyButton';
+import ToolBar from './components/ToolBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Counter from './components/Counter(Hook)';
+import Toggle from './components/Toggle';
+import ConfirmButton from './components/ConfirmButton';
+import NameForm from './components/NameForm';
+import SignUp from './components/SignUp';
+import Reservation from './components/Reservation';
+import Dialog from './components/Dialog';
+import SignUpDialog from './components/SignUpDialog';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +38,13 @@ const user = {
   userName : '손흥민'
 }
 
+const onClickLogoutHandle = (event) => {
+  alert('로그인 페이지로 이동합니다.')
+}
+const onClickLoginHandle = (event) => {
+  alert('로그아웃되었습니다.')
+}
+
 root.render(
   <React.StrictMode>
     {/* <App /> */}
@@ -34,9 +55,29 @@ root.render(
     {/* <Team></Team> */}
     {/* <CommentList></CommentList> */}
     {/* <NumberList></NumberList> */}
-
     {/* <WelcomeDialog /> */}
-    <ProfileCard></ProfileCard>
+    {/* <ProfileCard></ProfileCard> */}
+
+    {/* <ToolBar isLogin={false}
+      onClickLogoutHandle={onClickLoginHandle}
+      onClickLoginHandle={onClickLogoutHandle}
+      ></ToolBar> */}
+
+      {/* <Greeting isLogin={false}/> */}
+      {/* <MyButton/> */}
+
+      {/* <Counter/>
+      <Toggle/>
+      <ConfirmButton/> */}
+
+      {/* <BlogMain></BlogMain> */}
+
+      {/* <NameForm/> */}
+      {/* <SignUp></SignUp> */}
+      {/* <Reservation></Reservation> */}
+      
+      {/* <Dialog></Dialog> */}
+        <SignUpDialog/>
 
   </React.StrictMode>
 );
