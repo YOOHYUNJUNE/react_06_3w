@@ -30,17 +30,26 @@ code {
 }
 
 .card {
-  font-size: 20px;
-  width : 200px;
-  height : 200px;
-  margin : 30px;
+  /* font-size: 20px; */
+  width : 300px;
+  height : 400px;
+  margin : 20px;
   /* padding : 10px; */
   border-radius : 5px;
-  box-shadow: 0 0 40px gray;
+  box-shadow: 0 0 10px gray;
   background-color: gray;
   background-image: url('/public/son_01.jpg');
-  background-size: cover;
-  flex-basis: auto;
+  background-size: 'contain';
+  /* background-size: 'cover'; */
+  /* flex-basis: auto; */
+}
+
+.main {
+  color: white;
+}
+
+.date {
+  color: white;
 }
 
 

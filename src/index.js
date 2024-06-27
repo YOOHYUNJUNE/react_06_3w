@@ -26,6 +26,10 @@ import SignUp from './components/SignUp';
 import Reservation from './components/Reservation';
 import Dialog from './components/Dialog';
 import SignUpDialog from './components/SignUpDialog';
+import Test from './components/Test';
+import Container from './components/ex1(상품출력)/Container';
+import WordContainer from './components/ex2(단어추가)/WordContainer';
+import ProductContainer from './components/ex3/ProductContainer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -77,7 +81,12 @@ root.render(
       {/* <Reservation></Reservation> */}
       
       {/* <Dialog></Dialog> */}
-        <SignUpDialog/>
+      {/* <SignUpDialog/> */}
+      {/* <Test></Test> */}
+
+      {/* <Container></Container> */}
+      {/* <WordContainer></WordContainer> */}
+      <ProductContainer></ProductContainer>
 
   </React.StrictMode>
 );

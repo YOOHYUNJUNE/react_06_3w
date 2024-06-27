@@ -38,7 +38,7 @@ const blogData = {
 const style = {
     container : {
         width : '800px',
-        margin : '30px auto',
+        margin : '5px auto',
         border : '1px solid #000',
         alignItems : 'center',
         
