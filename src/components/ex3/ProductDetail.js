@@ -3,7 +3,7 @@ import React from "react";
 // 오른쪽에 출력될 데이터
 function ProductDetail ({cart, removeMenu}) {
 
-    
+
     const style = {
         // Detail style
         Detail : {
@@ -11,9 +11,10 @@ function ProductDetail ({cart, removeMenu}) {
             height : 120,
             display : 'inline-block',
             border : '1px solid black',
-            textAlign : 'center'
+            textAlign : 'center',
+            backgroundSize : 'contain',
+            
         }
-
     }
 
 
@@ -22,11 +23,14 @@ function ProductDetail ({cart, removeMenu}) {
             <ul>
                 {
                     cart.map((menu, index) => {
-                        return <li key={index} style={style.Detail}>
-                            {/* <h3>{menu.mno}</h3> */}
+                        // 장바구니 이미지
+
+                        return <li key={index} style={{...style.Detail, backgroundImage:`url(${menu.img})`}}>
                             <p>{menu.name}</p>
                             <p>{menu.price} 원</p>
-                            <button onClick={() => removeMenu(index)}>삭제</button>
+                            {/* <img src={menu.img} /> */}
+                            <button onClick={() => removeMenu(index)}>X</button>
+                            - X개 -
                             
                         </li>
                     })

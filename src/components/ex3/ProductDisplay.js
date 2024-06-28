@@ -6,11 +6,29 @@ function ProductDisplay({productList, changeMenu}) {
 
     const style = {
         Display : {
-            border : '1px solid black',
-            width : 200,
+            // border : '1px solid black',
+            // width : 200,
             padding : 15,
-            listStyleType : 'none'
+            listStyleType : 'none',
             // textAlign : 'center',
+            
+            display: 'flex',
+            flexWrap: 'wrap',
+            // justifyContent: 'flex-start',
+        },
+
+        Item : {
+            width: '19%',
+            margin: '5px',
+            padding: '5px',
+            cursor: 'pointer',
+            border: '2px solid black',
+            borderRadius: '10px',
+        },
+
+        Img : {
+            width: '200px',
+            height: '200px'
         }
     }
 
@@ -20,7 +38,13 @@ function ProductDisplay({productList, changeMenu}) {
                 {
                     productList.map(menu => {
                         return(
-                            <li key={menu.mno} onClick={() => changeMenu(menu.mno)}>{menu.name}</li>
+                            <li key={menu.mno}
+                                style={style.Item}
+                                onClick={() => changeMenu(menu.mno)}
+                                >
+                                <img src={menu.img} alt={menu.name} style={style.Img}></img>
+                                {menu.name}
+                            </li>
                         )
                     })
                 }

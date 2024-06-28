@@ -30,6 +30,7 @@ import Test from './components/Test';
 import Container from './components/ex1(상품출력)/Container';
 import WordContainer from './components/ex2(단어추가)/WordContainer';
 import ProductContainer from './components/ex3/ProductContainer';
+import CartContainer from './components/예제/CartContainer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -86,7 +87,9 @@ root.render(
 
       {/* <Container></Container> */}
       {/* <WordContainer></WordContainer> */}
+
       <ProductContainer></ProductContainer>
+      {/* <CartContainer></CartContainer> */}
 
   </React.StrictMode>
 );
